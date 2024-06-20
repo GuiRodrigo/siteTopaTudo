@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-    <title>Document</title>
+    <title>Topa Tudo</title>
   </head>
   <body>
     <header>
@@ -13,6 +13,17 @@
         <h1>Topa Tudo</h1>
         <input type="text" placeholder="Ache tudo o que procura aqui..." />
       </div>
+      <ul style="display: flex">
+        <li>
+          <a href="./index.html" rel="noopener noreferrer">Pagina Inicial</a>
+        </li>
+        <li>
+          <a href="./galeria.html" rel="noopener noreferrer">Galeria</a>
+        </li>
+        <li>
+          <a href="./inscrevase.html" rel="noopener noreferrer">Inscreva-se</a>
+        </li>
+      </ul>
       <img
         style="border: 2px solid black; border-radius: 100%"
         src="./images/perfil.png"
@@ -22,29 +33,12 @@
       />
     </header>
     <main>
-      <img
-        src="./images/banner.png"
-        alt="banner promocional"
-        style="width: 100vw; margin-top: 10px"
-      />
-      <div class="container">
-        <h2>Video sobre nós</h2>
-      </div>
-    </main>
-    <footer>
-      <div
-        style="
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-        "
-      >
-        <h2>Sobre nós</h2>
+      <div style="display: flex; flex-direction: column; margin-top: 10px">
+        <h2 style="align-self: center">Sobre nós</h2>
 
-        <ul>
+        <ul style="margin-left: 15px">
           <li>
-            <p>Somos uma webstore focada em repasse</p>
+            <p>Somos uma e-commerce focada em repasse</p>
           </li>
           <li>
             <p>Não nos resposabilizamos pelos items vendidos</p>
@@ -57,6 +51,30 @@
           </li>
         </ul>
       </div>
-    </footer>
+      <video width="560px" controls poster="./midia/motor_v12.jpg">
+        <source src="./midia/v12.mp4" />
+        <source src="./midia/v12.m4v" />
+        <source src="./midia/v12.webm" />
+        <source src="./midia/V12.ogv" />
+        <p>Seu navegador nâo suporta a tag video.</p>
+      </video>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/mHN6hZ6re8I?si=OlBl8swUPdhhxFAF"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <audio autoplay>
+        <source src="./midia/v12.mp3" />
+        <source src="./midia/v12.wav" />
+        <source src="./midia/v12.ogg" />
+        <p>Seu navegador nâo suporta a tag audio.</p>
+      </audio>
+    </main>
+    <footer></footer>
   </body>
 </html>

@@ -6,6 +6,15 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <title>Topa Tudo</title>
+    <style>
+      p {
+        padding: 10px;
+        font-size: 25px;
+        text-align: justify;
+        text-decoration: none;
+        letter-spacing: 1px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -13,17 +22,19 @@
         <h1>Topa Tudo</h1>
         <input type="text" placeholder="Ache tudo o que procura aqui..." />
       </div>
-      <ul style="display: flex">
-        <li>
-          <a href="./index.html" rel="noopener noreferrer">Pagina Inicial</a>
-        </li>
-        <li>
-          <a href="./galeria.html" rel="noopener noreferrer">Galeria</a>
-        </li>
-        <li>
-          <a href="./inscrevase.html" rel="noopener noreferrer">Inscreva-se</a>
-        </li>
-      </ul>
+      <nav>
+        <ul style="display: flex">
+          <li>
+            <a href="./index.html">Pagina Inicial</a>
+          </li>
+          <li>
+            <a href="./galeria.html">Galeria</a>
+          </li>
+          <li>
+            <a href="./inscrevase.html">Inscreva-se</a>
+          </li>
+        </ul>
+      </nav>
       <img
         style="border: 2px solid black; border-radius: 100%"
         src="./images/perfil.png"
@@ -36,20 +47,32 @@
       <div style="display: flex; flex-direction: column; margin-top: 10px">
         <h2 style="align-self: center">Sobre nós</h2>
 
-        <ul style="margin-left: 15px">
-          <li>
-            <p>Somos uma e-commerce focada em repasse</p>
-          </li>
-          <li>
-            <p>Não nos resposabilizamos pelos items vendidos</p>
-          </li>
-          <li>
-            <p>
-              Toda a negociação devera ser feita com o vendedor,
-              <strong> somente intermediamos!</strong>
-            </p>
-          </li>
-        </ul>
+        <p>
+          Nosso e-commerce é<strong> especializado em repasse</strong>, atuando
+          como intermediário entre compradores e vendedores. Nós proporcionamos
+          uma plataforma onde vendedores podem anunciar produtos para venda,
+          enquanto os compradores podem explorar e realizar suas compras
+          diretamente com os vendedores. Nosso papel é facilitar essa interação,
+          garantindo um ambiente seguro e confiável para ambas as partes.
+        </p>
+
+        <p>
+          É importante ressaltar que não colocamos os produtos à venda nem nos
+          responsabilizamos pela qualidade ou conformidade dos itens.
+          Recomendamos que os compradores verifiquem cuidadosamente os detalhes
+          antes de finalizar suas compras. Caso ocorra alguma discrepância entre
+          o produto recebido e o esperado, incentivamos que os compradores
+          negociem diretamente com os vendedores para resolver qualquer questão.
+        </p>
+
+        <p>
+          Para assegurar uma experiência positiva, toda a negociação, incluindo
+          pagamento, entrega e condições do produto, deve ser conduzida
+          exclusivamente entre o comprador e o vendedor. Estamos aqui para
+          proporcionar suporte e assistência ao longo desse processo, garantindo
+          que nossa plataforma seja um ambiente eficiente para transações de
+          repasse.
+        </p>
       </div>
       <video width="560px" controls poster="./midia/motor_v12.jpg">
         <source src="./midia/v12.mp4" />

@@ -11,19 +11,18 @@
     <header>
       <div style="display: flex; align-items: center; justify-content: center">
         <h1>Topa Tudo</h1>
-        <input type="text" placeholder="Ache tudo o que procura aqui..." />
       </div>
       <nav>
         <ul style="display: flex">
-          <li>
-            <a href="./index.html">Pagina Inicial</a>
-          </li>
-          <li>
-            <a href="./galeria.html">Galeria</a>
-          </li>
-          <li>
-            <a href="./inscrevase.html">Inscreva-se</a>
-          </li>
+          <a href="./index.html">
+            <li>Pagina Inicial</li>
+          </a>
+          <a href="./galeria.html" rel="prev">
+            <li>Galeria</li>
+          </a>
+          <a href="./inscrevase.html">
+            <li>Criar anúncio</li>
+          </a>
         </ul>
       </nav>
       <img
@@ -37,7 +36,7 @@
     <main style="display: flex; align-items: center; justify-content: center">
       <form>
         <fieldset style="width: 70vw; padding: 16px">
-          <legend>Dados Pessoais</legend>
+          <legend>Criar anúncio</legend>
           <label for="fname">Seu Nome:</label><br />
           <input
             type="text"
@@ -70,54 +69,26 @@
             placeholder="Digite seu e-mail"
           /><br />
 
-          <label for="senha">Crie uma senha:</label><br />
+          <label for="price">Preço</label><br />
           <input
-            type="password"
-            id="senha"
-            name="senha"
-            placeholder="Digite sua senha"
+            type="number"
+            id="price"
+            name="price"
+            placeholder="Escolha um preço"
           /><br />
 
-          <div>
-            <label for="idade">Nos diga sua idade</label><br />
-            <div
-              style="display: flex; flex-direction: row; align-items: center"
-            >
-              <input
-                value="0"
-                min="0"
-                max="10"
-                oninput="display.value=value"
-                onchange="display.value=value"
-                type="range"
-                id="idade"
-                name="idade"
-                placeholder="Digite sua senha"
-              />
-              <input
-                style="
-                  border: 0;
-                  padding: 0;
-                  height: 12px;
-                  width: 30px;
-                  margin: 0 0 0 5px;
-                "
-                type="number"
-                id="display"
-                disabled="disabled"
-                value="0"
-                readonly
-              />
-            </div>
-          </div>
-
-          <p>Marque seu Gênero:</p>
-          <input type="radio" name="genero" id="secM" />
-          <label for="secM">Masculino</label><br />
-          <input type="radio" name="genero" id="secF" />
-          <label for="secF">Feminino</label><br />
-          <input type="radio" name="genero" id="secO" />
-          <label for="secO">Outros</label><br />
+          <p>Selecione o tipo do anuncio:</p>
+          <input type="radio" name="type" id="Inf" />
+          <label for="Inf">Informatica</label><br />
+          <input type="radio" name="type" id="Blz" />
+          <label for="Blz">Beleza</label><br />
+          <input type="radio" name="type" id="Util" />
+          <label for="Util">Utencilios</label><br />
+          <input type="radio" name="type" id="Anti" />
+          <label for="Anti">Antiquados</label><br />
+          <input type="radio" name="type" id="Acs" />
+          <label for="Acs">Acessórios</label><br />
+          <input type="radio" name="type" id="secO" />
 
           <p>Selecione seu estado</p>
           <select name="estado" id="estado">
@@ -137,11 +108,36 @@
             <option value="PA">Pará</option>
           </select>
         </fieldset>
-        <br /><input type="submit" value="Enviar" />
+        <br /><input type="submit" value="Criar" />
         <input type="reset" value="Limpar" />
         <br />
       </form>
     </main>
-    <footer></footer>
+    <footer>
+      <h3 class="titleFooter">Nossos parceiros</h3>
+      <div style="display: flex; justify-content: space-around; gap: 10px">
+        <a href="https://google.com" target="_blank">
+          <img
+            class="imgFooter"
+            src="https://t.ctcdn.com.br/lvns56iaSMyHvyTur4JeYS_NYeY=/i606944.png"
+            alt="imagem de google"
+          />
+        </a>
+        <a href="https://www.netflix.com/br/" target="_blank">
+          <img
+            class="imgFooter"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/2048px-Netflix_icon.svg.png"
+            alt="imagem de netflix"
+          />
+        </a>
+        <a href="https://open.spotify.com/intl-pt" target="_blank">
+          <img
+            class="imgFooter"
+            src="https://febract.org.br/portal/wp-content/uploads/2020/04/SPOTIFY-LOGO.png"
+            alt="imagem de spotify"
+          />
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

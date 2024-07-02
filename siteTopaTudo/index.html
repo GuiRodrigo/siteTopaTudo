@@ -20,19 +20,18 @@
     <header>
       <div style="display: flex; align-items: center; justify-content: center">
         <h1>Topa Tudo</h1>
-        <input type="text" placeholder="Ache tudo o que procura aqui..." />
       </div>
       <nav>
         <ul style="display: flex">
-          <li>
-            <a href="./index.html">Pagina Inicial</a>
-          </li>
-          <li>
-            <a href="./galeria.html">Galeria</a>
-          </li>
-          <li>
-            <a href="./inscrevase.html">Inscreva-se</a>
-          </li>
+          <a href="./index.html">
+            <li>Pagina Inicial</li>
+          </a>
+          <a href="./galeria.html" rel="next">
+            <li>Galeria</li>
+          </a>
+          <a href="./inscrevase.html">
+            <li>Criar anúncio</li>
+          </a>
         </ul>
       </nav>
       <img
@@ -98,6 +97,31 @@
         <p>Seu navegador nâo suporta a tag audio.</p>
       </audio>
     </main>
-    <footer></footer>
+    <footer>
+      <h3 class="titleFooter">Nossos parceiros</h3>
+      <div style="display: flex; justify-content: space-around; gap: 10px">
+        <a href="https://google.com" target="_blank">
+          <img
+            class="imgFooter"
+            src="https://t.ctcdn.com.br/lvns56iaSMyHvyTur4JeYS_NYeY=/i606944.png"
+            alt="logo do google"
+          />
+        </a>
+        <a href="https://www.netflix.com/br/" target="_blank">
+          <img
+            class="imgFooter"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/2048px-Netflix_icon.svg.png"
+            alt="logo da netflix"
+          />
+        </a>
+        <a href="https://open.spotify.com/intl-pt" target="_blank">
+          <img
+            class="imgFooter"
+            src="https://febract.org.br/portal/wp-content/uploads/2020/04/SPOTIFY-LOGO.png"
+            alt="logo do spotify"
+          />
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

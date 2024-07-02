@@ -1,9 +1,13 @@
 * {
   padding: 0;
   margin: 0;
+  font-size: 1em;
+  text-decoration: none !important;
 }
 
 :root {
+  /* https://coolors.co/313a4f-475a83-a7a7a7-898989-3c3c3c */
+
   --border: #898989;
   --primary-color: #475a83;
   --primary-dark: #313a4f;
@@ -17,6 +21,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--bacground);
   padding: 6px 10px;
   border-bottom: 1px solid var(--primary-color);
   h1 {
@@ -39,7 +44,14 @@ a {
   text-decoration: none;
   color: var(--primary-color);
   font-size: large;
-  margin-left: 10px;
+  padding: 10px;
+}
+a :hover {
+  background-color: var(--primary-dark);
+}
+
+a :active {
+  background-color: var(--black);
 }
 
 li {
@@ -47,10 +59,10 @@ li {
 }
 
 body {
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
-  background-color: var(--bacground);
   color: var(--text);
+  background-color: var(--primary-dark);
   overflow-x: hidden;
 }
 
@@ -64,7 +76,9 @@ body {
 }
 
 main {
-  width: 100vw;
+  margin: auto;
+  width: 90vw;
+  background-color: var(--bacground);
   overflow-x: hidden;
 }
 
@@ -81,7 +95,20 @@ li {
 }
 
 footer {
+  padding: 0 0 10px 0;
   width: 100vw;
-  height: 15vh;
-  background-color: var(--primary-dark);
+  background-color: var(--bacground);
+  border-top: 2px solid var(--primary-dark);
+}
+
+.titleFooter {
+  text-align: center;
+  font-size: 30px;
+  color: var(--primary-dark);
+  margin: 0 0 10px 0;
+}
+
+.imgFooter {
+  height: 100px;
+  width: 100px;
 }

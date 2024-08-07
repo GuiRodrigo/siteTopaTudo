@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <title>Topa Tudo - Galeria</title>
+  </head>
+  <body>
+    <header>
+      <div style="display: flex; align-items: center; justify-content: center">
+        <h1>Topa Tudo</h1>
+      </div>
+      <nav>
+        <ul style="display: flex">
+          <a href="./index.html" rel="prev">
+            <li>Pagina Inicial</li>
+          </a>
+          <a href="./galeria.html">
+            <li>Galeria</li>
+          </a>
+          <a href="./inscrevase.html" rel="nex">
+            <li>Criar anúncio</li>
+          </a>
+          <a href="./formularios/index.html">
+            <li>Cadastrar</li>
+          </a>
+        </ul>
+      </nav>
+      <img
+        style="border: 2px solid black; border-radius: 100%"
+        src="./images/perfil.png"
+        width="60px"
+        height="60px"
+        alt="imagem de perfil"
+      />
+    </header>
+    <main>
+      <img
+        src="./images/banner.png"
+        alt="banner promocional"
+        style="width: 100vw; margin-top: 10px"
+      />
+      <div class="container">
+        <h2>Nossos produtos</h2>
+        <div class="controls">
+          <button id="decrease-font">Diminuir Fonte</button>
+          <button id="increase-font">Aumentar Fonte</button>
+        </div>
+        <div class="produtos" style="display: flex; flex-direction: row">
+          <div style="height: 125px; width: 125px; margin: 10px">
+            <img
+              src="./images/produto4.png"
+              alt="iphone"
+              style="width: 100%; height: 100%; margin-top: 10px"
+            />
+          </div>
+          <div style="height: 125px; width: 125px; margin: 10px">
+            <img
+              src="./images/produto1.png"
+              alt="mesa de escritorio"
+              style="width: 100%; height: 100%; margin-top: 10px"
+            />
+          </div>
+          <div style="height: 125px; width: 125px; margin: 10px">
+            <img
+              src="./images/produto2.png"
+              alt="cano de descarga"
+              style="width: 100%; height: 100%; margin-top: 10px"
+            />
+          </div>
+          <div style="height: 125px; width: 125px; margin: 10px">
+            <img
+              src="./images/produto3.png"
+              alt="produtos de limpeza"
+              style="width: 100%; height: 100%; margin-top: 10px"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h3 class="titleFooter">Nossos parceiros</h3>
+      <div style="display: flex; justify-content: space-around; gap: 10px">
+        <a href="https://google.com" rel="external" target="_blank">
+          <img
+            class="imgFooter"
+            src="https://t.ctcdn.com.br/lvns56iaSMyHvyTur4JeYS_NYeY=/i606944.png"
+            alt="imagem de google"
+          />
+        </a>
+        <a href="https://www.netflix.com/br/" rel="external" target="_blank">
+          <img
+            class="imgFooter"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/2048px-Netflix_icon.svg.png"
+            alt="imagem de netflix"
+          />
+        </a>
+        <a
+          href="https://open.spotify.com/intl-pt"
+          rel="external"
+          target="_blank"
+        >
+          <img
+            class="imgFooter"
+            src="https://febract.org.br/portal/wp-content/uploads/2020/04/SPOTIFY-LOGO.png"
+            alt="imagem de spotify"
+          />
+        </a>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

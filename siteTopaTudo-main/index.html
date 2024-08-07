@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <title>Topa Tudo</title>
+    <style>
+      p {
+        padding: 10px;
+        font-size: 25px;
+        text-align: justify;
+        text-decoration: none;
+        letter-spacing: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div style="display: flex; align-items: center; justify-content: center">
+        <h1>Topa Tudo</h1>
+      </div>
+      <nav>
+        <ul style="display: flex">
+          <a href="./index.html">
+            <li>Pagina Inicial</li>
+          </a>
+          <a href="./galeria.html" rel="next">
+            <li>Galeria</li>
+          </a>
+          <a href="./inscrevase.html">
+            <li>Criar anúncio</li>
+          </a>
+          <a href="./formularios/index.html">
+            <li>Cadastrar</li>
+          </a>
+        </ul>
+      </nav>
+      <img
+        style="border: 2px solid black; border-radius: 100%"
+        src="./images/perfil.png"
+        width="60px"
+        height="60px"
+        alt="imagem de perfil"
+      />
+    </header>
+    <main>
+      <div style="display: flex; flex-direction: column; margin-top: 10px">
+        <h2 style="align-self: center">Sobre nós</h2>
+        <div class="controls">
+          <button id="decrease-font">Diminuir Fonte</button>
+          <button id="increase-font">Aumentar Fonte</button>
+        </div>
+
+        <p>
+          Nosso e-commerce é<strong> especializado em repasse</strong>, atuando
+          como intermediário entre compradores e vendedores. Nós proporcionamos
+          uma plataforma onde vendedores podem anunciar produtos para venda,
+          enquanto os compradores podem explorar e realizar suas compras
+          diretamente com os vendedores. Nosso papel é facilitar essa interação,
+          garantindo um ambiente seguro e confiável para ambas as partes.
+        </p>
+
+        <p>
+          É importante ressaltar que não colocamos os produtos à venda nem nos
+          responsabilizamos pela qualidade ou conformidade dos itens.
+          Recomendamos que os compradores verifiquem cuidadosamente os detalhes
+          antes de finalizar suas compras. Caso ocorra alguma discrepância entre
+          o produto recebido e o esperado, incentivamos que os compradores
+          negociem diretamente com os vendedores para resolver qualquer questão.
+        </p>
+
+        <p>
+          Para assegurar uma experiência positiva, toda a negociação, incluindo
+          pagamento, entrega e condições do produto, deve ser conduzida
+          exclusivamente entre o comprador e o vendedor. Estamos aqui para
+          proporcionar suporte e assistência ao longo desse processo, garantindo
+          que nossa plataforma seja um ambiente eficiente para transações de
+          repasse.
+        </p>
+      </div>
+      <video width="560px" controls poster="./midia/motor_v12.jpg">
+        <source src="./midia/v12.mp4" />
+        <source src="./midia/v12.m4v" />
+        <source src="./midia/v12.webm" />
+        <source src="./midia/V12.ogv" />
+        <p>Seu navegador nâo suporta a tag video.</p>
+      </video>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/mHN6hZ6re8I?si=OlBl8swUPdhhxFAF"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <audio autoplay>
+        <source src="./midia/v12.mp3" />
+        <source src="./midia/v12.wav" />
+        <source src="./midia/v12.ogg" />
+        <p>Seu navegador nâo suporta a tag audio.</p>
+      </audio>
+    </main>
+    <footer>
+      <h3 class="titleFooter">Nossos parceiros</h3>
+      <div style="display: flex; justify-content: space-around; gap: 10px">
+        <a href="https://google.com" rel="external" target="_blank">
+          <img
+            class="imgFooter"
+            src="https://t.ctcdn.com.br/lvns56iaSMyHvyTur4JeYS_NYeY=/i606944.png"
+            alt="imagem de google"
+          />
+        </a>
+        <a href="https://www.netflix.com/br/" rel="external" target="_blank">
+          <img
+            class="imgFooter"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/2048px-Netflix_icon.svg.png"
+            alt="imagem de netflix"
+          />
+        </a>
+        <a
+          href="https://open.spotify.com/intl-pt"
+          rel="external"
+          target="_blank"
+        >
+          <img
+            class="imgFooter"
+            src="https://febract.org.br/portal/wp-content/uploads/2020/04/SPOTIFY-LOGO.png"
+            alt="imagem de spotify"
+          />
+        </a>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
